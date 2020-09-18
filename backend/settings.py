@@ -21,6 +21,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 ALLOWED_HOSTS = []
 
+SECRET_KEY = 'x(mox2@dfgdhsl^447twtj12g!-ll7&n=6fsgtw_xsdfh1yqs78b4i'
+
 
 # Application definition
 
