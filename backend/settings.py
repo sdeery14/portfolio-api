@@ -35,7 +35,7 @@ if 'RDS_DB_NAME' in os.environ:
         }
     }
 
-DEBUG = False
+DEBUG = True
 
 
 # Application definition
