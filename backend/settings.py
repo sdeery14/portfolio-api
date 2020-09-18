@@ -19,7 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
-ALLOWED_HOSTS = ['backend-dev22.us-east-1.elasticbeanstalk.com/']
+ALLOWED_HOSTS = ['backend-dev22.us-east-1.elasticbeanstalk.com']
 
 SECRET_KEY = 'x(mox2@dfgdhsl^447twtj12g!-ll7&n=6fsgtw_xsdfh1yqs78b4i'
 
