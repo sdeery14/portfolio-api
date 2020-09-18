@@ -23,6 +23,20 @@ ALLOWED_HOSTS = []
 
 SECRET_KEY = 'x(mox2@dfgdhsl^447twtj12g!-ll7&n=6fsgtw_xsdfh1yqs78b4i'
 
+if 'RDS_DB_NAME' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': os.environ['RDS_DB_NAME'],
+            'USER': os.environ['RDS_USERNAME'],
+            'PASSWORD': os.environ['RDS_PASSWORD'],
+            'HOST': os.environ['RDS_HOSTNAME'],
+            'PORT': os.environ['RDS_PORT'],
+        }
+    }
+
+DEBUG = False
+
 
 # Application definition
 
